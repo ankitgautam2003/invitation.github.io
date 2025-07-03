@@ -72,7 +72,7 @@ function initNavigation() {
 
 // Countdown timer functionality
 function initCountdown() {
-    const targetDate = new Date('2024-12-15T18:00:00').getTime();
+    const targetDate = new Date('2025-12-15T18:00:00').getTime();
     
     function updateCountdown() {
         const now = new Date().getTime();

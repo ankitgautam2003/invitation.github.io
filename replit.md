@@ -91,3 +91,5 @@ Preferred communication style: Simple, everyday language.
 
 Changelog:
 - July 03, 2025. Initial setup
+- July 03, 2025. Converted from React to pure HTML/CSS/JavaScript
+- July 03, 2025. Updated celebration year from 2024 to 2025, changed hero text color from white to dark slate for better readability
