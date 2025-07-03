@@ -1,0 +1,163 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap');
+
+:root {
+  --background: hsl(0, 0%, 100%);
+  --foreground: hsl(20, 14.3%, 4.1%);
+  --muted: hsl(60, 4.8%, 95.9%);
+  --muted-foreground: hsl(25, 5.3%, 44.7%);
+  --popover: hsl(0, 0%, 100%);
+  --popover-foreground: hsl(20, 14.3%, 4.1%);
+  --card: hsl(0, 0%, 100%);
+  --card-foreground: hsl(20, 14.3%, 4.1%);
+  --border: hsl(20, 5.9%, 90%);
+  --input: hsl(20, 5.9%, 90%);
+  --primary: hsl(207, 90%, 54%);
+  --primary-foreground: hsl(211, 100%, 99%);
+  --secondary: hsl(60, 4.8%, 95.9%);
+  --secondary-foreground: hsl(24, 9.8%, 10%);
+  --accent: hsl(60, 4.8%, 95.9%);
+  --accent-foreground: hsl(24, 9.8%, 10%);
+  --destructive: hsl(0, 84.2%, 60.2%);
+  --destructive-foreground: hsl(60, 9.1%, 97.8%);
+  --ring: hsl(20, 14.3%, 4.1%);
+  --radius: 0.5rem;
+  
+  /* Custom celebration colors */
+  --anniversary: hsl(344, 67%, 31%);
+  --birthday: hsl(219, 85%, 38%);
+  --gold: hsl(51, 100%, 50%);
+  --orange: hsl(20, 95%, 53%);
+  --rose-gold: hsl(355, 47%, 81%);
+  --lime: hsl(84, 75%, 44%);
+}
+
+.dark {
+  --background: hsl(240, 10%, 3.9%);
+  --foreground: hsl(0, 0%, 98%);
+  --muted: hsl(240, 3.7%, 15.9%);
+  --muted-foreground: hsl(240, 5%, 64.9%);
+  --popover: hsl(240, 10%, 3.9%);
+  --popover-foreground: hsl(0, 0%, 98%);
+  --card: hsl(240, 10%, 3.9%);
+  --card-foreground: hsl(0, 0%, 98%);
+  --border: hsl(240, 3.7%, 15.9%);
+  --input: hsl(240, 3.7%, 15.9%);
+  --primary: hsl(207, 90%, 54%);
+  --primary-foreground: hsl(211, 100%, 99%);
+  --secondary: hsl(240, 3.7%, 15.9%);
+  --secondary-foreground: hsl(0, 0%, 98%);
+  --accent: hsl(240, 3.7%, 15.9%);
+  --accent-foreground: hsl(0, 0%, 98%);
+  --destructive: hsl(0, 62.8%, 30.6%);
+  --destructive-foreground: hsl(0, 0%, 98%);
+  --ring: hsl(240, 4.9%, 83.9%);
+  --radius: 0.5rem;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-sans antialiased bg-background text-foreground;
+    font-family: 'Inter', sans-serif;
+    scroll-behavior: smooth;
+  }
+
+  .font-playfair {
+    font-family: 'Playfair Display', serif;
+  }
+
+  .font-inter {
+    font-family: 'Inter', sans-serif;
+  }
+}
+
+@layer components {
+  .anniversary-gradient {
+    background: linear-gradient(135deg, var(--anniversary) 0%, var(--rose-gold) 100%);
+  }
+  
+  .birthday-gradient {
+    background: linear-gradient(135deg, var(--birthday) 0%, var(--lime) 100%);
+  }
+  
+  .text-gradient-gold {
+    background: linear-gradient(135deg, var(--gold) 0%, var(--orange) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  
+  .nav-link {
+    @apply transition-all duration-300 hover:text-yellow-500;
+  }
+  
+  .nav-link.active {
+    @apply text-yellow-500;
+    border-bottom: 2px solid var(--gold);
+  }
+  
+  .hover-scale {
+    @apply transition-transform duration-300 hover:scale-105;
+  }
+  
+  .celebration-card {
+    @apply bg-white/10 backdrop-blur-sm rounded-2xl border border-white/20;
+  }
+}
+
+@layer utilities {
+  .text-anniversary {
+    color: var(--anniversary);
+  }
+  
+  .text-birthday {
+    color: var(--birthday);
+  }
+  
+  .text-gold {
+    color: var(--gold);
+  }
+  
+  .text-orange {
+    color: var(--orange);
+  }
+  
+  .text-rose-gold {
+    color: var(--rose-gold);
+  }
+  
+  .text-lime {
+    color: var(--lime);
+  }
+  
+  .bg-anniversary {
+    background-color: var(--anniversary);
+  }
+  
+  .bg-birthday {
+    background-color: var(--birthday);
+  }
+  
+  .bg-gold {
+    background-color: var(--gold);
+  }
+  
+  .bg-orange {
+    background-color: var(--orange);
+  }
+  
+  .bg-rose-gold {
+    background-color: var(--rose-gold);
+  }
+  
+  .bg-lime {
+    background-color: var(--lime);
+  }
+}
