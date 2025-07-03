@@ -2,121 +2,86 @@
 
 ## Overview
 
-This is a modern, responsive web application built to celebrate a double milestone: the 25th wedding anniversary of Mr. Sanjay Kumar and Mrs. Maya Devi, and the 11th birthday of Shresth. The application features an elegant design with smooth animations, interactive galleries, and a countdown timer to build excitement for the upcoming celebration.
+This is a modern, responsive celebration website built to honor the double milestone: the 25th wedding anniversary of Mr. Sanjay Kumar and Mrs. Maya Devi, and the 11th birthday of Shresth. The application features an elegant design with smooth animations, interactive galleries, and a countdown timer to build excitement for the upcoming celebration.
 
 ## System Architecture
 
-The application follows a full-stack architecture with clear separation between client and server components:
+The application has been converted from React to pure HTML, CSS, and JavaScript for simplicity and broader compatibility:
 
 ### Frontend Architecture
-- **Framework**: React 18 with TypeScript
-- **Styling**: Tailwind CSS with custom CSS variables for theming
-- **UI Components**: Radix UI primitives with shadcn/ui component library
-- **Animations**: Framer Motion for smooth transitions and scroll-triggered animations
-- **Routing**: Wouter for lightweight client-side routing
-- **State Management**: React Query (@tanstack/react-query) for server state management
-- **Build Tool**: Vite for fast development and optimized builds
-
-### Backend Architecture
-- **Framework**: Express.js with TypeScript
-- **Database**: PostgreSQL with Drizzle ORM
-- **Database Provider**: Neon Database (@neondatabase/serverless)
-- **Storage**: In-memory storage implementation with interface for future database integration
-- **Session Management**: connect-pg-simple for PostgreSQL session storage
+- **Technology**: Pure HTML5, CSS3, and Vanilla JavaScript
+- **Styling**: Custom CSS with CSS variables for theming and smooth animations
+- **Icons**: Lucide Icons CDN for consistent iconography
+- **Animations**: CSS keyframes and JavaScript for smooth transitions and scroll-triggered animations
+- **Responsive Design**: Mobile-first approach with CSS Grid and Flexbox
+- **Performance**: Optimized with lazy loading and intersection observer for animations
 
 ### Styling System
 - **Design System**: Custom celebration theme with anniversary and birthday color schemes
 - **Typography**: Playfair Display for headings, Inter for body text
 - **Color Palette**: Custom CSS variables for consistent theming
-- **Responsive Design**: Mobile-first approach with Tailwind breakpoints
+- **Responsive Design**: Mobile-first approach with CSS media queries
 
 ## Key Components
 
 ### Navigation System
 - Fixed navigation bar with smooth scrolling between sections
-- Mobile-responsive hamburger menu
+- Mobile-responsive hamburger menu with animated toggle
 - Active section highlighting based on scroll position
+- Vanilla JavaScript event handling for navigation interactions
 
 ### Event Sections
-1. **Hero Section**: Eye-catching landing area with celebration announcement
-2. **Anniversary Section**: Dedicated area for the 25th anniversary celebration
-3. **Birthday Section**: Special section for the 11th birthday celebration with countdown timer
-4. **Event Place Section**: Venue information and amenities
+1. **Hero Section**: Eye-catching landing area with celebration announcement and gradient background
+2. **Anniversary Section**: Dedicated area for the 25th anniversary celebration with milestone details
+3. **Birthday Section**: Special section for the 11th birthday celebration with live countdown timer
+4. **Event Place Section**: Venue information, amenities, and location details
 5. **Gallery Section**: Tabbed photo gallery with categories (Anniversary, Birthday, Family)
 
 ### Interactive Features
-- Countdown timer for event anticipation
-- Intersection observer for scroll-triggered animations
-- Image galleries with category filtering
-- Smooth scrolling navigation
-- Responsive design for all devices
+- Live countdown timer for event anticipation using JavaScript Date objects
+- Intersection Observer API for scroll-triggered animations
+- Image galleries with category filtering via JavaScript
+- Smooth scrolling navigation with CSS scroll-behavior
+- Responsive design for all devices using CSS Grid and Flexbox
 
-### UI Components
-- Comprehensive set of accessible components from Radix UI
-- Custom styled components using class-variance-authority
-- Toast notifications for user feedback
-- Tooltips and popovers for enhanced UX
+### Animation System
+- CSS keyframes for smooth fade-in and slide animations
+- JavaScript-triggered animations on scroll
+- Hover effects and transitions for interactive elements
+- Animated scroll indicator and mobile menu transitions
 
-## Data Flow
+## Technical Implementation
 
-### Client-Side Data Flow
-1. React components manage local UI state
-2. React Query handles server state and caching
-3. Custom hooks manage reusable logic (countdown, intersection observer)
-4. Framer Motion provides animation state management
+### JavaScript Architecture
+1. **Event-Driven**: DOM event listeners for user interactions
+2. **Modular Functions**: Separate initialization functions for each feature
+3. **Animation Control**: Intersection Observer for performance-optimized animations
+4. **State Management**: Simple JavaScript variables for UI state
 
-### Server-Side Data Flow
-1. Express routes handle API requests
-2. Storage interface abstracts data persistence
-3. In-memory storage provides immediate functionality
-4. Drizzle ORM ready for PostgreSQL integration
+### CSS Architecture
+1. **CSS Variables**: Consistent theming with custom properties
+2. **Mobile-First**: Responsive design with progressive enhancement
+3. **Animation Library**: CSS keyframes for smooth transitions
+4. **Component Classes**: Reusable utility classes for consistent styling
 
-### Schema Design
-- User entity with username and password fields
-- Extensible schema structure for future event-related data
-- Type-safe database operations with Drizzle and Zod validation
-
-## External Dependencies
-
-### Core Dependencies
-- **React Ecosystem**: React 18, React DOM, React Router (Wouter)
-- **UI Framework**: Radix UI primitives, shadcn/ui components
-- **Styling**: Tailwind CSS, class-variance-authority, clsx
-- **Animations**: Framer Motion, Embla Carousel
-- **Data Fetching**: TanStack React Query
-- **Forms**: React Hook Form with Hookform Resolvers
-- **Database**: Drizzle ORM, Neon Database driver
-- **Validation**: Zod for schema validation
-- **Utilities**: date-fns for date manipulation
-
-### Development Dependencies
-- **Build Tools**: Vite, esbuild for production builds
-- **Type Checking**: TypeScript with strict configuration
-- **Development**: TSX for TypeScript execution, Replit plugins
+### External Dependencies
+- **Lucide Icons**: CDN-loaded icon library for consistent iconography
+- **Google Fonts**: Playfair Display and Inter font families
+- **No Build Process**: Direct HTML/CSS/JS files for simplicity
 
 ## Deployment Strategy
 
-### Development Environment
-- Vite dev server with HMR (Hot Module Replacement)
-- TypeScript checking with incremental builds
-- Replit-specific plugins for development experience
+### Static Hosting
+- Single HTML file with embedded CSS and JavaScript
+- No build process required
+- Can be hosted on any static hosting service
+- No server-side dependencies
 
-### Production Build
-- Vite builds the client-side application
-- esbuild bundles the server for Node.js deployment
-- Static assets served from dist/public directory
-- Environment variables for database configuration
-
-### Database Setup
-- Drizzle migrations in the migrations directory
-- PostgreSQL schema defined in shared/schema.ts
-- Environment variable (DATABASE_URL) for connection configuration
-
-### Hosting Considerations
-- Static client files can be served by any CDN
-- Node.js server requires environment with PostgreSQL access
-- Session storage requires PostgreSQL connection
-- Environment variables needed for database connection
+### Performance Optimizations
+- Lazy loading for gallery images
+- Intersection Observer for efficient scroll animations
+- Minimal external dependencies
+- Optimized CSS with custom properties
 
 ## User Preferences
 
