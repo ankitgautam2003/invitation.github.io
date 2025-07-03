@@ -40,7 +40,7 @@ export default function Footer() {
           >
             <h3 className="text-2xl font-playfair font-bold mb-4">
               <Heart className="inline-block w-5 h-5 text-gold mr-2" />
-              Celebration 2024
+              Celebration 2025
             </h3>
             <p className="text-gray-300 mb-4">
               Join us for a double celebration filled with love, joy, and unforgettable memories.
@@ -106,7 +106,7 @@ export default function Footer() {
           transition={{ duration: 0.6, delay: 0.6 }}
         >
           <p className="text-gray-400">
-            © 2024 Celebration. Made with <Heart className="inline-block w-4 h-4 text-gold mx-1" /> for our special day.
+            © 2025 Celebration. Made with <Heart className="inline-block w-4 h-4 text-gold mx-1" /> for our special day.
           </p>
         </motion.div>
       </div>

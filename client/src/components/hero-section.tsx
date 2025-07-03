@@ -27,7 +27,7 @@ export default function HeroSection() {
           transition={{ duration: 0.8 }}
         >
           <motion.h1 
-            className="text-4xl md:text-6xl lg:text-7xl font-playfair font-bold text-white mb-6"
+            className="text-4xl md:text-6xl lg:text-7xl font-playfair font-bold text-slate-800 mb-6"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
@@ -37,29 +37,29 @@ export default function HeroSection() {
           
           <div className="space-y-4 mb-8">
             <motion.div 
-              className="celebration-card p-6"
+              className="celebration-card p-6 bg-white/90 text-slate-800"
               initial={{ opacity: 0, x: -50 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
             >
-              <h2 className="text-2xl md:text-3xl font-playfair font-semibold text-white mb-2">
+              <h2 className="text-2xl md:text-3xl font-playfair font-semibold text-slate-800 mb-2">
                 25th Wedding Anniversary
               </h2>
-              <p className="text-lg text-white/90">
+              <p className="text-lg text-slate-700">
                 Mr. Sanjay Kumar & Mrs. Maya Devi
               </p>
             </motion.div>
             
             <motion.div 
-              className="celebration-card p-6"
+              className="celebration-card p-6 bg-white/90 text-slate-800"
               initial={{ opacity: 0, x: 50 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, delay: 0.6 }}
             >
-              <h2 className="text-2xl md:text-3xl font-playfair font-semibold text-white mb-2">
+              <h2 className="text-2xl md:text-3xl font-playfair font-semibold text-slate-800 mb-2">
                 11th Birthday Celebration
               </h2>
-              <p className="text-lg text-white/90">
+              <p className="text-lg text-slate-700">
                 Shresth
               </p>
             </motion.div>
@@ -96,7 +96,7 @@ export default function HeroSection() {
       
       {/* Animated scroll indicator */}
       <motion.div 
-        className="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-white"
+        className="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-anniversary"
         animate={{ y: [0, 10, 0] }}
         transition={{ repeat: Infinity, duration: 2 }}
       >

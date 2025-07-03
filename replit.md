@@ -6,21 +6,29 @@ This is a modern, responsive celebration website built to honor the double miles
 
 ## System Architecture
 
-The application has been converted from React to pure HTML, CSS, and JavaScript for simplicity and broader compatibility:
+The application follows a modern React architecture with TypeScript and Tailwind CSS:
 
 ### Frontend Architecture
-- **Technology**: Pure HTML5, CSS3, and Vanilla JavaScript
-- **Styling**: Custom CSS with CSS variables for theming and smooth animations
-- **Icons**: Lucide Icons CDN for consistent iconography
-- **Animations**: CSS keyframes and JavaScript for smooth transitions and scroll-triggered animations
-- **Responsive Design**: Mobile-first approach with CSS Grid and Flexbox
-- **Performance**: Optimized with lazy loading and intersection observer for animations
+- **Framework**: React 18 with TypeScript
+- **Styling**: Tailwind CSS with custom CSS variables for theming
+- **UI Components**: Radix UI primitives with shadcn/ui component library
+- **Animations**: Framer Motion for smooth transitions and scroll-triggered animations
+- **Routing**: Wouter for lightweight client-side routing
+- **State Management**: React Query (@tanstack/react-query) for server state management
+- **Build Tool**: Vite for fast development and optimized builds
+
+### Backend Architecture
+- **Framework**: Express.js with TypeScript
+- **Database**: PostgreSQL with Drizzle ORM
+- **Database Provider**: Neon Database (@neondatabase/serverless)
+- **Storage**: In-memory storage implementation with interface for future database integration
+- **Session Management**: connect-pg-simple for PostgreSQL session storage
 
 ### Styling System
 - **Design System**: Custom celebration theme with anniversary and birthday color schemes
 - **Typography**: Playfair Display for headings, Inter for body text
 - **Color Palette**: Custom CSS variables for consistent theming
-- **Responsive Design**: Mobile-first approach with CSS media queries
+- **Responsive Design**: Mobile-first approach with Tailwind breakpoints
 
 ## Key Components
 
@@ -91,5 +99,6 @@ Preferred communication style: Simple, everyday language.
 
 Changelog:
 - July 03, 2025. Initial setup
-- July 03, 2025. Converted from React to pure HTML/CSS/JavaScript
+- July 03, 2025. Converted from React to pure HTML/CSS/JavaScript  
 - July 03, 2025. Updated celebration year from 2024 to 2025, changed hero text color from white to dark slate for better readability
+- July 03, 2025. Converted back to React at user request with all 2025 updates and improved color scheme

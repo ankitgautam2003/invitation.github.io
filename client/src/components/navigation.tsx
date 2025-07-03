@@ -36,7 +36,7 @@ export default function Navigation({ activeSection }: NavigationProps) {
               whileHover={{ scale: 1.05 }}
             >
               <Heart className="inline-block w-5 h-5 text-gold mr-2" />
-              Celebration 2024
+              Celebration 2025
             </motion.h1>
           </div>
 

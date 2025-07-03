@@ -9,7 +9,7 @@ export default function EventPlaceSection() {
 
   const venueInfo = [
     { icon: MapPin, label: "Location", value: "Premium Guesthouse, Garden City" },
-    { icon: Calendar, label: "Event Date", value: "December 15, 2024" },
+    { icon: Calendar, label: "Event Date", value: "December 15, 2025" },
     { icon: Clock, label: "Timing", value: "6:00 PM - 11:00 PM" },
   ];
 

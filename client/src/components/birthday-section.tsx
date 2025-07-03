@@ -7,7 +7,7 @@ import { useRef } from "react";
 export default function BirthdaySection() {
   const sectionRef = useRef<HTMLElement>(null);
   const isVisible = useIntersectionObserver(sectionRef);
-  const targetDate = new Date("2024-12-15T18:00:00");
+  const targetDate = new Date("2025-12-15T18:00:00");
   const { days, hours, minutes, seconds } = useCountdown(targetDate);
 
   const highlights = [
