@@ -14,9 +14,13 @@ export default function AnniversarySection() {
   ];
 
   return (
-    <section ref={sectionRef} id="anniversary" className="py-20 bg-gradient-to-br from-anniversary/5 to-rose-gold/10">
+    <section
+      ref={sectionRef}
+      id="anniversary"
+      className="py-20 bg-gradient-to-br from-anniversary/5 to-rose-gold/10"
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <motion.div 
+        <motion.div
           className="text-center mb-16"
           initial={{ opacity: 0, y: 50 }}
           animate={isVisible ? { opacity: 1, y: 0 } : {}}
@@ -26,13 +30,14 @@ export default function AnniversarySection() {
             25th Wedding Anniversary
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Celebrating a quarter-century of love, commitment, and beautiful memories
+            Celebrating a quarter-century of love, commitment, and beautiful
+            memories
           </p>
         </motion.div>
-        
+
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Anniversary Details */}
-          <motion.div 
+          <motion.div
             className="space-y-8"
             initial={{ opacity: 0, x: -50 }}
             animate={isVisible ? { opacity: 1, x: 0 } : {}}
@@ -62,14 +67,14 @@ export default function AnniversarySection() {
                 </div>
               </div>
             </div>
-            
+
             <div className="bg-white rounded-2xl shadow-xl p-8 hover-scale">
               <h3 className="text-2xl font-playfair font-semibold text-anniversary mb-4">
                 Silver Jubilee Milestones
               </h3>
               <div className="space-y-4">
                 {milestones.map((milestone, index) => (
-                  <motion.div 
+                  <motion.div
                     key={index}
                     className="flex items-center"
                     initial={{ opacity: 0, x: -20 }}
@@ -85,17 +90,17 @@ export default function AnniversarySection() {
               </div>
             </div>
           </motion.div>
-          
+
           {/* Anniversary Image */}
-          <motion.div 
+          <motion.div
             className="relative"
             initial={{ opacity: 0, x: 50 }}
             animate={isVisible ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.8, delay: 0.4 }}
           >
-            <img 
-              src="https://images.unsplash.com/photo-1606216794074-735e91aa2c92?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600" 
-              alt="Wedding anniversary celebration" 
+            <img
+              src="/assets/WA1.jpg"
+              alt="Wedding anniversary celebration"
               className="rounded-2xl shadow-2xl w-full h-auto hover-scale"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-anniversary/20 to-transparent rounded-2xl"></div>

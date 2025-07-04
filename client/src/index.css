@@ -1,8 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap');
 
 :root {
   --background: hsl(0, 0%, 100%);
@@ -25,7 +25,7 @@
   --destructive-foreground: hsl(60, 9.1%, 97.8%);
   --ring: hsl(20, 14.3%, 4.1%);
   --radius: 0.5rem;
-  
+
   /* Custom celebration colors */
   --anniversary: hsl(344, 67%, 31%);
   --birthday: hsl(219, 85%, 38%);
@@ -65,48 +65,52 @@
 
   body {
     @apply font-sans antialiased bg-background text-foreground;
-    font-family: 'Inter', sans-serif;
+    font-family: "Inter", sans-serif;
     scroll-behavior: smooth;
   }
 
   .font-playfair {
-    font-family: 'Playfair Display', serif;
+    font-family: "Playfair Display", serif;
   }
 
   .font-inter {
-    font-family: 'Inter', sans-serif;
+    font-family: "Inter", sans-serif;
   }
 }
 
 @layer components {
   .anniversary-gradient {
-    background: linear-gradient(135deg, var(--anniversary) 0%, var(--rose-gold) 100%);
+    background: linear-gradient(
+      135deg,
+      var(--anniversary) 0%,
+      var(--rose-gold) 100%
+    );
   }
-  
+
   .birthday-gradient {
     background: linear-gradient(135deg, var(--birthday) 0%, var(--lime) 100%);
   }
-  
+
   .text-gradient-gold {
     background: linear-gradient(135deg, var(--gold) 0%, var(--orange) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
   }
-  
+
   .nav-link {
     @apply transition-all duration-300 hover:text-yellow-500;
   }
-  
+
   .nav-link.active {
     @apply text-yellow-500;
     border-bottom: 2px solid var(--gold);
   }
-  
+
   .hover-scale {
     @apply transition-transform duration-300 hover:scale-105;
   }
-  
+
   .celebration-card {
     @apply bg-white/10 backdrop-blur-sm rounded-2xl border border-white/20;
   }
@@ -116,47 +120,47 @@
   .text-anniversary {
     color: var(--anniversary);
   }
-  
+
   .text-birthday {
     color: var(--birthday);
   }
-  
+
   .text-gold {
     color: var(--gold);
   }
-  
+
   .text-orange {
     color: var(--orange);
   }
-  
+
   .text-rose-gold {
     color: var(--rose-gold);
   }
-  
+
   .text-lime {
     color: var(--lime);
   }
-  
+
   .bg-anniversary {
     background-color: var(--anniversary);
   }
-  
+
   .bg-birthday {
     background-color: var(--birthday);
   }
-  
+
   .bg-gold {
     background-color: var(--gold);
   }
-  
+
   .bg-orange {
     background-color: var(--orange);
   }
-  
+
   .bg-rose-gold {
     background-color: var(--rose-gold);
   }
-  
+
   .bg-lime {
     background-color: var(--lime);
   }

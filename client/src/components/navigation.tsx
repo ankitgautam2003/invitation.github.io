@@ -31,12 +31,12 @@ export default function Navigation({ activeSection }: NavigationProps) {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex items-center">
-            <motion.h1 
+            <motion.h1
               className="text-lg font-playfair font-bold text-anniversary"
               whileHover={{ scale: 1.05 }}
             >
               <Heart className="inline-block w-5 h-5 text-gold mr-2" />
-              Celebration 2025
+              Celebration
             </motion.h1>
           </div>
 

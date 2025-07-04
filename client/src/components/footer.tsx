@@ -1,5 +1,15 @@
 import { motion } from "framer-motion";
-import { Heart, Phone, Mail, MapPin, Facebook, Instagram, MessageCircle } from "lucide-react";
+import {
+  Heart,
+  Phone,
+  Mail,
+  MapPin,
+  Facebook,
+  Instagram,
+  MessageCircle,
+  Linkedin,
+  Github,
+} from "lucide-react";
 
 export default function Footer() {
   const quickLinks = [
@@ -11,15 +21,27 @@ export default function Footer() {
   ];
 
   const socialLinks = [
-    { icon: Facebook, href: "#", label: "Facebook" },
-    { icon: Instagram, href: "#", label: "Instagram" },
-    { icon: MessageCircle, href: "#", label: "WhatsApp" },
+    {
+      icon: Instagram,
+      href: "https://www.instagram.com/ankit_gautam_03/?hl=en",
+      label: "Instagram",
+    },
+    {
+      icon: Github,
+      href: "https://github.com/ankitgautam2003",
+      label: "Github",
+    },
+    {
+      icon: Linkedin,
+      href: "https://www.linkedin.com/in/ankit-gautam-85a807259/",
+      label: "Linkedin",
+    },
   ];
 
   const contactInfo = [
-    { icon: Phone, label: "+91 XXXXX XXXXX" },
-    { icon: Mail, label: "celebration@example.com" },
-    { icon: MapPin, label: "Garden City, India" },
+    { icon: Phone, label: "+91 98895 24500" },
+    { icon: Mail, label: "ankitgautam22.08.2003@gmail.com" },
+    { icon: MapPin, label: "4/931 Indra Nagar Poni Road Shuklaganj Unnao." },
   ];
 
   const scrollToSection = (sectionId: string) => {
@@ -43,7 +65,8 @@ export default function Footer() {
               Celebration 2025
             </h3>
             <p className="text-gray-300 mb-4">
-              Join us for a double celebration filled with love, joy, and unforgettable memories.
+              Join us for a double celebration filled with love, joy, and
+              unforgettable memories.
             </p>
             <div className="flex space-x-4">
               {socialLinks.map((social, index) => (
@@ -60,7 +83,7 @@ export default function Footer() {
               ))}
             </div>
           </motion.div>
-          
+
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -81,7 +104,7 @@ export default function Footer() {
               ))}
             </ul>
           </motion.div>
-          
+
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -98,15 +121,17 @@ export default function Footer() {
             </div>
           </motion.div>
         </div>
-        
-        <motion.div 
+
+        <motion.div
           className="border-t border-gray-800 mt-8 pt-8 text-center"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.6, delay: 0.6 }}
         >
           <p className="text-gray-400">
-            © 2025 Celebration. Made with <Heart className="inline-block w-4 h-4 text-gold mx-1" /> for our special day.
+            © 2025 Celebration. Made with{" "}
+            <Heart className="inline-block w-4 h-4 text-gold mx-1" /> for our
+            special day.
           </p>
         </motion.div>
       </div>
